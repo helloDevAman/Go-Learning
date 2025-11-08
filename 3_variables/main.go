@@ -62,3 +62,8 @@ func main() {
 	*/
 
 }
+
+/**
+We can declear variables outside the functions too.
+But the short hand decleration is not supproted.
+*/

@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import "fmt" // fmt is the library in which formatting and printing methods are there it stands for formatting
 
 func main() {
 

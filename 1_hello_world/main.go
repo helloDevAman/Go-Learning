@@ -1,4 +1,4 @@
-package main
+package main // Go will look for this main package when we are running the the program standalone
 
 import "fmt" // fmt is the library in which formatting and printing methods are there it stands for formatting
 

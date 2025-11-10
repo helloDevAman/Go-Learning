@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 /**
 1. Slice -> dynamic array
@@ -57,4 +60,7 @@ func main() {
 	- The growth pattern is implementation-dependent, but generally doubles each time (1, 2, 4, 8, 16...).
 	- This makes slices efficient for dynamic array usage.
 	*/
+
+	// Compare two slices
+	slices.Equal(auto, nums) // We can only compare slices if they are of same type using equal function as if type is diff then it is already diff
 }

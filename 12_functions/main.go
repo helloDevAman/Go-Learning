@@ -32,6 +32,13 @@ func processTask(task func(who string) (string, string, int)) (firstname, lastna
 	return task("Bob")
 }
 
+// functions can also return functions
+func returnFunction() func(name string) string {
+	return func(name string) string {
+		return "Hello, " + name + "! This isfrom the returned function!"
+	}
+}
+
 func main() {
 	// Calling function and printing the result with two parameters
 	sum := add(5, 3)
@@ -61,4 +68,9 @@ func main() {
 	// Calling the processTask function with the assigned function and printing the result
 	value1, value2, value3 := processTask(fun)
 	fmt.Printf("value1: %s, value2: %s, value3: %d\n", value1, value2, value3)
+
+	// Calling the function that returns a function and then calling the returned function
+	function := returnFunction()
+	message := function("Alice")
+	fmt.Println(message)
 }

@@ -14,6 +14,7 @@ func main() {
 
 	// Decleration and Initialization
 	m2 := map[int]string{1: "Code"}
+	// or m2 := map[int]string{}
 	fmt.Println("Map m2 size is:", len(m2))  // Output: 1
 	fmt.Println("Map m2 is nil:", m2 == nil) // Output: false
 
@@ -28,6 +29,7 @@ func main() {
 	// This will provide a runtime error because we are trying to add a key-value pair to a nil map,
 	// Before adding any we need to initializee the map first like below
 	m1 = map[string]string{"camera": "5MP"}
+	// or m1 = map[string]string{}
 	// or m1 = make(map[string]string)
 
 	m2[2] = "Eat"   // We can assign a key with respectice value like this

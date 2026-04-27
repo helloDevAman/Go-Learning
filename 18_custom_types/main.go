@@ -71,8 +71,6 @@ func main() {
 
 	fmt.Println("Is Adult:", age.isAdult())
 
-	age.isAdult()
-
 	var x int = 25
 
 	// INVALID:
